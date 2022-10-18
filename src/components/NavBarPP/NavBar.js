@@ -29,9 +29,12 @@ export const NavBar = () => {
             
             <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
+          
         </div>
       </div>
     </nav>
+    <br></br>
+          <br></br>
   </header>
     )
 }

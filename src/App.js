@@ -15,6 +15,7 @@ import { NavBar } from "./components/NavBarPP/NavBar";
 import { Footer } from "./components/Footer/Footer";
 import { HeroBanner } from "./components/HeroBanner/HeroBanner";
 import { Table } from "./components/Table/Table";
+import { Carrousel } from "./components/Carrousel/Carrousel";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     <>
     
     <NavBar/>
-    
+    <Carrousel/>
     <Table/>
     
     <Footer/>
