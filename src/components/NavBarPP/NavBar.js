@@ -16,10 +16,10 @@ export const NavBar = () => {
               <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-newspaper"></i> Noticias</a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">To be continued</a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Wallet </a>
             </li>
           </ul>
           {/*<button class="btn btn-primary" onclick="darkmode()"> <i class="fa-solid fa-moon"></i> </button>*/}
@@ -34,7 +34,7 @@ export const NavBar = () => {
       </div>
     </nav>
     <br></br>
-          <br></br>
+    <br></br>
   </header>
     )
 }
