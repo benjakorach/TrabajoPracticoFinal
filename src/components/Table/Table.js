@@ -11,7 +11,6 @@ export const Table = () => {
             <th scope="col">#</th>
             <th scope="col">Moneda</th>
             <th scope="col"></th>
-            <th scope="col"></th>
             <th scope="col">Precio</th>
             <th scope="col">Capitalizacion</th>
           </tr>
