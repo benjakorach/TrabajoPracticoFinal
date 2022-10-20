@@ -1,11 +1,13 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBtc } from '@fortawesome/free-brands-svg-icons'
 
 export const NavBar = () => {
     return (
         <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><i class="fa-brands fa-btc"></i> Wiki Crypto</a>
+        <a class="navbar-brand" href="index.html"><FontAwesomeIcon icon={faBtc} /> Wiki Crypto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
