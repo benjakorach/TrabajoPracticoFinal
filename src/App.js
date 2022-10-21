@@ -14,23 +14,34 @@ import { DesestArray } from "./components/fundamentos/07-DesestArray";
 import { NavBar } from "./components/NavBarPP/NavBar";
 import { Footer } from "./components/Footer/Footer";
 import { HeroBanner } from "./components/HeroBanner/HeroBanner";
-import { Table } from "./components/Table/Table";
 import { Carrousel } from "./components/Carrousel/Carrousel";
-
+import axios from "axios";
+import {useEffect,useState} from "react";
+import TableCoins from "./components/TableCoins";
 
 function App() {
-  //  console.log(dataProducts)
-  return (
-    <>
-    
-    <NavBar/>
-    <Carrousel/>
-    <Table/>
-    
-    <Footer/>
-    
 
-</>
+  const [coins,setCoins] = useState([])
+
+  const getData = async () => {
+    const res = await axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1")
+    console.log(res.data)
+    setCoins(res.data)
+  }
+
+  useEffect(() => {
+    getData()
+  }, []) 
+  return (
+    
+    <div className="container">
+      <div className="row">
+        <NavBar></NavBar>
+        <Carrousel></Carrousel>
+      <TableCoins coins={coins}/>
+      <Footer></Footer>
+      </div>
+      </div>
   );
 }
 

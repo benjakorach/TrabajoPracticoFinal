@@ -3,7 +3,7 @@ import "./carrousel.css";
 
 export const Carrousel = () => {
     return (
-        <div class="container d-flex justifiy-content-between" >
+        <div class="container" >
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -15,19 +15,19 @@ export const Carrousel = () => {
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active d-flex justifiy-content-between">
               <iframe src="https://www.youtube.com/embed/DHEchgj9y0M" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/PgCdVWFkVfk" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/lPsnEleNc40" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/Z-ZE3cnmcMc" frameborder="0"></iframe>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item d-flex justifiy-content-between">
               <iframe src="https://www.youtube.com/embed/bftLben94go" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/xwEt2hgpMO8" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/htXEEVkiIJ0" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/go1DNIw78jU" frameborder="0"></iframe>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item d-flex justifiy-content-between">
               <iframe src="https://www.youtube.com/embed/aLh8jlYYvZA" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/2-uu9yrVaDE" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/Ye9ckbN_lqc" frameborder="0"></iframe>
