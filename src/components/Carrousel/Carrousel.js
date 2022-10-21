@@ -15,7 +15,7 @@ export const Carrousel = () => {
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active d-flex justifiy-content-between">
+            <div class="carousel-item active d-flex justify-content-between">
               <iframe src="https://www.youtube.com/embed/DHEchgj9y0M" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/PgCdVWFkVfk" frameborder="0"></iframe>
               <iframe src="https://www.youtube.com/embed/lPsnEleNc40" frameborder="0"></iframe>
